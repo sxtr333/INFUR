@@ -1,0 +1,28 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "infer-hub"
+version = "1.0.0"
+description = "Local GPU inference platform with job queue"
+readme = "README.md"
+requires-python = ">=3.12"
+dependencies = [
+  "fastapi==0.115.12",
+  "uvicorn[standard]==0.34.2",
+  "httpx==0.28.1",
+  "pydantic==2.11.4",
+  "pydantic-settings==2.9.1",
+  "aiosqlite==0.21.0",
+  "prometheus-client==0.21.1",
+  "python-dotenv==1.1.0",
+  "redis==5.2.1",
+]
+
+[tool.setuptools.packages.find]
+include = ["infer_hub*"]
+
+[tool.pytest.ini_options]
+asyncio_mode = "auto"
+testpaths = ["tests"]
