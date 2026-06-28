@@ -6,7 +6,7 @@
 
 Платформа для **локального GPU-инференса** через Ollama: REST API, очередь задач с приоритетами, фоновый worker, метрики и Docker.
 
-**Repo:** https://github.com/sxtr333/INFER_HUB
+**Repo:** https://github.com/sxtr333/INFUR
 
 Сделано для нагрузки на **видеокарту**, не на процессор. CPU ограничен (**макс. 75%**).
 
@@ -59,8 +59,8 @@ flowchart LR
 ## Быстрый старт
 
 ```bash
-git clone git@github-cars:sxtr333/INFER_HUB.git
-cd INFER_HUB
+git clone git@github-infer-clean:sxtr333/INFUR.git
+cd INFUR
 
 python3 -m venv .venv
 source .venv/bin/activate
